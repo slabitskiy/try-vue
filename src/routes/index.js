@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import { Routes } from '../config'
-import { Home, About } from '../containers'
+import { Home, About, Post } from '../containers'
 Vue.use(VueRouter)
 
 const routes = [
@@ -12,6 +12,10 @@ const routes = [
   {
     path: Routes.about.route,
     component: About
+  },
+  {
+    path: Routes.post.route,
+    component: Post
   },
   // catch all redirect
   {

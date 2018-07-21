@@ -7,6 +7,9 @@ const Routes = {
   about: {
     route: '/about',
     name: 'About'
+  },
+  post: {
+    route: '/post/:id'
   }
 }
 

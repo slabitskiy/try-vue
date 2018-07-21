@@ -19,6 +19,7 @@
                         class="nav-link"
                         active-class="active"
                         v-for="(item) in navigations"
+                        v-if="item.name"
                         :to="{ path: item.route}"
                     >
                         {{item.name}}
@@ -30,9 +31,6 @@
 </template>
 <script>
 import {Routes} from '../config';
-const keys = Object.keys(Routes);
-
-console.log(keys.map(key => Routes[key]))
 
 export default {
     name: 'navbar',
