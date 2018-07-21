@@ -3,6 +3,10 @@ const Routes = {
   root: {
     route: '/',
     name: 'Home'
+  },
+  about: {
+    route: '/about',
+    name: 'About'
   }
 }
 

@@ -15,6 +15,7 @@
             <div class="collapse navbar-collapse" :class="{show: isCollapsed}">
                 <div class="navbar-nav-custom ml-auto">
                     <router-link 
+                        exact
                         class="nav-link"
                         active-class="active"
                         v-for="(item) in navigations"
@@ -55,10 +56,14 @@ export default {
 
 <style lang="scss" scoped>
 .navbar-nav-custom {
+    display: flex;
     .nav-link {
         &.active {
             pointer-events: none;
         }
+    }
+    @media (max-width: 991px) {
+        display: block;
     }
 }
 </style>

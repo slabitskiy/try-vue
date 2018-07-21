@@ -16,3 +16,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.container {
+  padding-top: 20px
+}
+</style>
